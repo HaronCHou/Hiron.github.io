@@ -151,6 +151,120 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Sobel 和 总变分正则化去噪 工具箱使用说明" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Sobel-和-总变分正则化去噪"><a href="#Sobel-和-总变分正则化去噪" class="headerlink" title="Sobel 和 总变分正则化去噪"></a>Sobel 和 总变分正则化去噪</h3><h4 id="1-安装工具箱和设置路径"><a href="#1-安装工具箱和设置路径" class="headerlink" title="1. 安装工具箱和设置路径"></a>1. 安装工具箱和设置路径</h4><p>创建一个.m文件。添加工具箱的路径</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">getd = @(p)path(p,path);</span><br><span class="line">getd(<span class="string">'toolbox_signal/'</span>);</span><br><span class="line">getd(<span class="string">'toolbox_general/'</span>);</span><br></pre></td></tr></table></figure>
+<h4 id="2-先验和正则化（Prior-and-Regularization"><a href="#2-先验和正则化（Prior-and-Regularization" class="headerlink" title="2. 先验和正则化（Prior and Regularization)"></a>2. 先验和正则化（Prior and Regularization)</h4><p>对给定图像f, 先验J(f)指定一个分数，从图像角度是小的分数。</p>
+<p>对含噪图像y的降噪是通过变分最小化来获得的，在适合数据和先验上取一个平衡。$min||y-f||^2+\lambda J(f)$。 如果J(f)是一个f的凸函数，则最小值存在且唯一。参数tao &gt; 0是噪声水平，其值越大，降噪程度越大。$\tau$ 相当于dt。</p>
+<p>如果J(f)是f的一个平滑函数，最小化求解可以用梯度下降计算。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/21/Sobel 和 总变分正则化去噪 工具箱使用说明/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-HelloEveryone" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/21/HelloEveryone/">HelloEveryone</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/21/HelloEveryone/" class="archive-article-date">
+  	<time datetime="2017-12-21T07:26:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/21/HelloEveryone/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
