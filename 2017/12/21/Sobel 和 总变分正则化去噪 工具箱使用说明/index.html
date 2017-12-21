@@ -8,16 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Sobel 和 总变分正则化去噪1. 安装工具箱和设置路径创建一个.m文件。添加工具箱的路径 123getd = @(p)path(p,path);getd(&apos;toolbox_signal/&apos;);getd(&apos;toolbox_general/&apos;); 2. 先验和正则化（Prior and Regularization)对给定图像f, 先验J(f)指定一个分数，从图像角度是小的分数。 对含噪图像y的降">
+  <meta name="description" content="Sobel 和 总变分正则化去噪">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2017/12/21/Sobel 和 总变分正则化去噪 工具箱使用说明/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Sobel 和 总变分正则化去噪1. 安装工具箱和设置路径创建一个.m文件。添加工具箱的路径 123getd = @(p)path(p,path);getd(&apos;toolbox_signal/&apos;);getd(&apos;toolbox_general/&apos;); 2. 先验和正则化（Prior and Regularization)对给定图像f, 先验J(f)指定一个分数，从图像角度是小的分数。 对含噪图像y的降">
-<meta property="og:updated_time" content="2017-12-21T02:39:23.605Z">
+<meta property="og:description" content="Sobel 和 总变分正则化去噪">
+<meta property="og:locale" content="zh-cn">
+<meta property="og:updated_time" content="2017-12-21T08:00:50.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="Sobel 和 总变分正则化去噪1. 安装工具箱和设置路径创建一个.m文件。添加工具箱的路径 123getd = @(p)path(p,path);getd(&apos;toolbox_signal/&apos;);getd(&apos;toolbox_general/&apos;); 2. 先验和正则化（Prior and Regularization)对给定图像f, 先验J(f)指定一个分数，从图像角度是小的分数。 对含噪图像y的降">
+<meta name="twitter:description" content="Sobel 和 总变分正则化去噪">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -49,8 +50,10 @@
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Doe</a></h1>
+		  <h1 class="header-author"><a href="/">Haron Chou</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">���ɰٴ��������˴�</p>
 		
 
 		<nav class="header-menu">
@@ -58,7 +61,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/allPages">所有文章</a></li>
+	        
+				<li><a href="/tags">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -82,11 +87,7 @@
 				
 					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:640611686@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -107,10 +108,14 @@
 				<img src="" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">John Doe</h1>
+			  <h1 class="header-author js-header-author">Haron Chou</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>���ɰٴ��������˴�<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
 			
 				
 			
@@ -123,22 +128,20 @@
 					
 						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:640611686@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/allPages">所有文章</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -158,7 +161,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Sobel-和-总变分正则化去噪"><a href="#Sobel-和-总变分正则化去噪" class="headerlink" title="Sobel 和 总变分正则化去噪"></a>Sobel 和 总变分正则化去噪</h3><h4 id="1-安装工具箱和设置路径"><a href="#1-安装工具箱和设置路径" class="headerlink" title="1. 安装工具箱和设置路径"></a>1. 安装工具箱和设置路径</h4><p>创建一个.m文件。添加工具箱的路径</p>
+        <h3 id="Sobel-和-总变分正则化去噪"><a href="#Sobel-和-总变分正则化去噪" class="headerlink" title="Sobel 和 总变分正则化去噪"></a>Sobel 和 总变分正则化去噪</h3><a id="more"></a>
+<h4 id="1-安装工具箱和设置路径"><a href="#1-安装工具箱和设置路径" class="headerlink" title="1. 安装工具箱和设置路径"></a>1. 安装工具箱和设置路径</h4><p>创建一个.m文件。添加工具箱的路径</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">getd = @(p)path(p,path);</span><br><span class="line">getd(<span class="string">'toolbox_signal/'</span>);</span><br><span class="line">getd(<span class="string">'toolbox_general/'</span>);</span><br></pre></td></tr></table></figure>
 <h4 id="2-先验和正则化（Prior-and-Regularization"><a href="#2-先验和正则化（Prior-and-Regularization" class="headerlink" title="2. 先验和正则化（Prior and Regularization)"></a>2. 先验和正则化（Prior and Regularization)</h4><p>对给定图像f, 先验J(f)指定一个分数，从图像角度是小的分数。</p>
 <p>对含噪图像y的降噪是通过变分最小化来获得的，在适合数据和先验上取一个平衡。$min||y-f||^2+\lambda J(f)$。 如果J(f)是一个f的凸函数，则最小值存在且唯一。参数tao &gt; 0是噪声水平，其值越大，降噪程度越大。$\tau$ 相当于dt。</p>
@@ -301,7 +305,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 John Doe
+    		&copy; 2017 Haron Chou
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
