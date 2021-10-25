@@ -6,7 +6,7 @@
 
 1. ### 吴恩达《深度学习笔记》
 
-   - [吴恩达 深度学习笔记 zhr](https://github.com/HaronCHou/deeplearning-assignment/tree/master/吴恩达深度学习笔记 zhr.md)
+   - [吴恩达 深度学习笔记 zhr](https://github.com/HaronCHou/deeplearning-assignment/tree/master/吴恩达深度学习笔记zhr.md)
 
 2. ### 林轩田《机器学习基石》《机器学习技法》笔记
 
